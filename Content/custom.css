@@ -1,0 +1,20 @@
+﻿html, body {
+	background-color: black;
+}
+.juicy {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -225px;
+	margin-top: -138px;
+	width: 450px;
+	height: 275px;
+}
+
+.alert {
+    margin-bottom: 0px;
+}
+
+.row {
+    margin-top: 10px;
+}

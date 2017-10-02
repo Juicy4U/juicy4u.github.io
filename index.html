@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AlwaysJuicy | Home</title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width" name="viewport" />
+    <base target="_self" />
+    <script src="/Scripts/modernizr-2.7.2.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/Content/custom.css" rel="stylesheet" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="/Scripts/jquery-2.1.0.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/swfobject.js"></script>
+    <script src="/Scripts/analytics.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="juicy">
+                <div id="juicy">
+                    <img src="~/Content/theme/logo.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <script>
+                var swfVersionStr = '9.0.124';
+                var xiSwfUrlStr = '';
+                var flashvars = {};
+                var params = {};
+                params.quality = 'best';
+                params.bgcolor = '#000000';
+                params.play = 'true';
+                params.loop = 'true';
+                params.wmode = 'transparent';
+                params.scale = 'noscale';
+                params.menu = 'false';
+                params.devicefont = 'false';
+                params.salign = '';
+                params.allowscriptaccess = 'sameDomain';
+                var attributes = {};
+                attributes.id = 'preview';
+                attributes.name = 'preview';
+                attributes.align = 'middle';
+                swfobject.embedSWF('/Content/theme/logo.swf', 'juicy', '450', '275', swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
