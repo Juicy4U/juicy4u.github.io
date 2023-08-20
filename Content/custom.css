@@ -57,9 +57,15 @@ html, body {
 	background-color: black;
 }
 
-.container {
+html {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	flex-grow: 1;
 }
