@@ -8,43 +8,20 @@
     <base target="_self" />
     <link href="/Content/custom.css" rel="stylesheet" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/Scripts/swfobject.js"></script>
+    <script src="/Scripts/swf2js.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="juicy">
-          <div id="juicy">
-            <img src="/Content/theme/logo.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <script>
-          var swfVersionStr = '9.0.124';
-          var xiSwfUrlStr = '';
-          var flashvars = {};
-          var params = {};
-          params.quality = 'best';
-          params.bgcolor = '#000000';
-          params.play = 'true';
-          params.loop = 'true';
-          params.wmode = 'transparent';
-          params.scale = 'noscale';
-          params.menu = 'false';
-          params.devicefont = 'false';
-          params.salign = '';
-          params.allowscriptaccess = 'sameDomain';
-          var attributes = {};
-          attributes.id = 'preview';
-          attributes.name = 'preview';
-          attributes.align = 'middle';
-          swfobject.embedSWF('/Content/theme/logo.swf', 'juicy', '450', '275', swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
-        </script>
-      </div>
+      <div id="juicy" />
+      /div>
     </div>
+    <script>
+      swf2js.load('/Content/theme/logo.swf', {
+        width: 450,
+        height: 275,
+        tagId: 'juicy',
+      });
+    </script>
   </body>
 </html>
